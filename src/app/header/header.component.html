@@ -1,0 +1,50 @@
+<!-- <nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand">Recipe Book</a>
+    </div>
+
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#" (click)="onSelect('recipe')">Recipes</a></li>
+        <li><a href="#" (click)="onSelect('shopping-list')">Shopping List</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown" appDropdown>
+          <a href="#" class="dropdown-toggle" role="button">Manage <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Save Data</a></li>
+            <li><a href="#">Fetch Data</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+<nav class="navbar navbar-expand navbar-light bg-light">
+  <div class="navbar-brand"> <b> Libro de Recetas</b></div>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/recipes">Recipes</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/shopping-list">Shopping-List</a>
+      </li>
+
+    </ul>
+    <div class="dropdown mr-2">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        MANAGE
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" style="cursor: pointer;">Save Data</a>
+        <a class="dropdown-item" style="cursor: pointer;">Flech Data</a>
+      </div>
+    </div>
+
+  </div>
+</nav>
